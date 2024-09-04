@@ -1,18 +1,37 @@
 * {
     font-family: "Baskervville", serif;
     color: #000;
+    font-weight: bold;
+}
+:root {
+    --pink: #fdf1ff;
+    --blu: #dbe8f5;
 }
 
 body {
     background-image: linear-gradient(
         transparent, 
-        #fdf1ff,
-        #dbe8f5,
+        var(--pink),
+        var(--blu),
         transparent
     );
-    margin: auto 20px;
+    margin: auto;
 }
 
+#survey-form {
+    margin: 0 15px;
+    width: 80%;
+    margin: auto;
+}
+
+h1, footer {
+    background-image: linear-gradient(
+        transparent,
+        var(--blu),
+        transparent
+    );
+    width: 100%;
+}
 textarea {
     resize: none;
 }
@@ -27,20 +46,18 @@ bottom: 0;
 left: 0;
 right: 0;
 position: absolute;
-}
-
-footer {
-    margin-bottom: 10px;
+margin-bottom: 10px;
 }
 
 fieldset {
     border: 1px #000 dashed;
-    margin: 15px 0;
+    margin: 25px 0;
     padding: 15px;
 }
 
 fieldset:nth-of-type(6) {
     border: none;
+    margin-top: -25px;
 }
 
 #submit {
@@ -50,4 +67,20 @@ fieldset:nth-of-type(6) {
 
 .first > :not(:last-child), .rec > :not(:last-child), .os-s > :not(:last-child)  {
     margin-right: 15px;
+}
+
+input[type="radio"]:checked:before {
+    accent-color: transparent;
+}
+
+input[type="radio"]:checked {
+    accent-color: var(--blu);
+}
+
+input[type="checkbox"] {
+    accent-color: var(--pink)
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
