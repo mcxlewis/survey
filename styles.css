@@ -10,6 +10,7 @@ body {
         #dbe8f5,
         transparent
     );
+    margin: auto 20px;
 }
 
 textarea {
@@ -30,4 +31,19 @@ position: absolute;
 
 footer {
     margin-bottom: 10px;
+}
+
+fieldset {
+    border: 1px #000 dashed;
+    margin: 15px 0;
+    padding: 15px;
+}
+
+fieldset:nth-of-type(6) {
+    border: none;
+}
+
+#submit {
+    background-color:   #fdf1ff;
+    border: 1px black dashed;
 }

@@ -15,15 +15,15 @@
     <p id="description">Take a moment to fill out our survey.</p>
     <form id="survey-form">
       <fieldset class="info" id="info">
-        </label>
+        <legend>Tell us a little about yourself: </legend>
         <label id="name-label">Name: 
-          <input id="name" name="name" input type="text" placeholder="Last, First" required />
+          <input id="name" name="name" input type="text" placeholder="Your Name" required />
         </label>
         <label id="email-label">Email: 
           <input id="email" name="email" input type="email" placeholder= "youremail@here.com" required />
         </label>
         <label id="number-label">Age: 
-          <input id="number" name="age" input type="number" min="18" max="120" minlength="1" placeholder="-" required /> 
+          <input id="number" name="age" input type="number" min="18" max="120" minlength="1" required /> 
         </label>
         <label for="job">Current occupation: 
           <input id="job" name="job" input type="text" required />
@@ -42,7 +42,8 @@
         </label> <!--find way to only sel 1-->
       </fieldset>
       <fieldset class="edu" id="edu">
-        <label for="dropdown">Please select your level of education:
+        <legend>Please select your level of education: </legend>
+        <label for="dropdown"> 
           <select id="dropdown" name="dropdown">
             <option>
               Less than high school
@@ -83,7 +84,7 @@
           <textarea rows="5" cols="50" required placeholder="I promise I won't tell!" maxlength="250"></textarea>
           </label>
        </fieldset>
-       <fieldset>
+       <fieldset class="submit-button">
          <input id="submit" input type="submit"/>
       </fieldset>
       </form>
