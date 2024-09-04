@@ -30,15 +30,15 @@
       </fieldset>
       <fieldset class="rec" id="rec">
         <legend>Would you recommend FCC to a friend?</legend> 
-        <label for="yes">
-          <input type="checkbox" value="Yes" /> Yes
-        </label> 
-        <label for="no">
-          <input type="checkbox" value ="No" /> No
-        </label> 
-        <label for="maybe">
-          <input type="checkbox" value="Maybe" /> Maybe <!--find way to only sel 1-->
+        <label for="Yes">
+          <input id="Yes" name="response" input type="radio" value="Yes"/> Yes
         </label>
+        <label for="No">
+          <input id="No" name="response" input type="radio" value="No"/> No
+        </label> 
+        <label for="Maybe">
+          <input id="Maybe" name="response" input type="radio" value="Maybe"/> Maybe
+        </label> <!--find way to only sel 1-->
       </fieldset>
       <fieldset class="edu" id="edu">
         <label for="dropdown">Please select your level of education:
@@ -55,28 +55,31 @@
             <option>
               None
             </option>
+            <option>
+              Other
+            </option>
           </select> 
         </label>    
       </fieldset> 
-      <fieldset class="os" id="os"> 
-        <legend> Which operating system are you currently running?</legend>
-          <label for="macOS">
-            <input id="macOS" name="os" input type="radio" value="macOS"/> macOS
+      <fieldset class="os-s" id="os-s"> 
+        <legend> Which operating system(s) are you currently running?</legend>
+        <label for="macOS">
+          <input type="checkbox" value="macOS" name="os"/> macOS
           </label>
           <label for="Windows">
-            <input id="Windows" name="os" input type="radio" value="Windows"/> Windows
+          <input type="checkbox" value="Windows" name="os"/> Windows
           </label>
           <label for="Linux">
-            <input id="Linux" name="os" input type="radio" value="Linux"/> Linux
+            <input type="checkbox" value="Linux" name="os"/> Linux
           </label>
           <label for="Other">
-            <input id="Other" name="os" input type="radio" value="Other"/> Other
+            <input type="checkbox" value="Other" name="os"/> Other
           </label>
       </fieldset>
        <fieldset class="question" id="question">
         <legend> What is your deepest, darkest fear?</legend>
           <label for="text"> 
-          <textarea></textarea>
+          <textarea rows="5" cols="50" required placeholder="I promise I won't tell!" maxlength="250"></textarea>
           </label>
        </fieldset>
        <fieldset>
