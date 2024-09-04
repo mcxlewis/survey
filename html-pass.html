@@ -13,7 +13,7 @@
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Take a moment to fill out our survey.</p>
     <form id="survey-form">
-      <fieldset class="info" id="info">
+      <fieldset>
         </label>
         <label id="name-label">Name: 
           <input id="name" name="name" input type="text" placeholder="Last, First" required />
@@ -28,7 +28,7 @@
           <input id="job" name="job" input type="text" required />
         </label>
       </fieldset>
-      <fieldset class="rec" id="rec">
+      <fieldset>
         <legend>Would you recommend FCC to a friend?</legend> 
         <label for="yes">
           <input type="checkbox" value="Yes" /> Yes
@@ -40,7 +40,7 @@
           <input type="checkbox" value="Maybe" /> Maybe <!--find way to only sel 1-->
         </label>
       </fieldset>
-      <fieldset class="edu" id="edu">
+      <fieldset>
         <label for="dropdown">Please select your level of education:
           <select id="dropdown" name="dropdown">
             <option>
@@ -58,7 +58,7 @@
           </select> 
         </label>    
       </fieldset> 
-      <fieldset class="os" id="os"> 
+      <fieldset> 
         <legend> Which operating system are you currently running?</legend>
           <label for="macOS">
             <input id="macOS" name="os" input type="radio" value="macOS"/> macOS
@@ -73,12 +73,12 @@
             <input id="Other" name="os" input type="radio" value="Other"/> Other
           </label>
       </fieldset>
-       <fieldset class="question" id="question">
+       <fieldset>
         <legend> What is your deepest, darkest fear?</legend>
           <label for="text"> 
-          <textarea></textarea>
+           <textarea></textarea>
           </label>
-       </fieldset>
+      </fieldset>
        <fieldset>
          <input id="submit" input type="submit"/>
       </fieldset>
