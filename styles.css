@@ -1,6 +1,5 @@
 * {
     font-family: "Baskervville", serif;
-    color: #000;
     font-weight: bold;
 }
 :root {
@@ -18,12 +17,6 @@ body {
     margin: auto;
 }
 
-#survey-form {
-    margin: 0 15px;
-    width: 80%;
-    margin: auto;
-}
-
 h1, footer {
     background-image: linear-gradient(
         transparent,
@@ -32,6 +25,21 @@ h1, footer {
     );
     width: 100%;
 }
+
+ h1 {
+    margin-bottom: 15px;
+}
+
+#description {
+    margin-top: 0;
+}
+
+#survey-form {
+    margin: 0 15px;
+    width: 65%;
+    margin: auto;
+}
+
 textarea {
     resize: none;
 }
@@ -47,6 +55,7 @@ left: 0;
 right: 0;
 position: absolute;
 margin-bottom: 10px;
+font-size: 14px;
 }
 
 fieldset {
@@ -69,6 +78,10 @@ fieldset:nth-of-type(6) {
     margin-right: 15px;
 }
 
+.first > input {
+    margin-left: 10px;
+}
+
 input[type="radio"]:checked:before {
     accent-color: transparent;
 }
@@ -78,7 +91,7 @@ input[type="radio"]:checked {
 }
 
 input[type="checkbox"] {
-    accent-color: var(--pink)
+    accent-color: var(--pink);
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {

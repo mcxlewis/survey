@@ -11,8 +11,10 @@
   
 </head>
 <body>
-    <header><h1 id="title">freeCodeCamp Survey Form</h1></header>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Take a moment to fill out our survey.</p>
+    </header>
     <form id="survey-form">
         <fieldset class="info" id="info">
         <legend>Tell us a little about yourself: </legend>
@@ -41,12 +43,13 @@
         </label> 
         <label for="Maybe">
           <input id="Maybe" name="response" input type="radio" value="Maybe"/> Maybe
-        </label> <!--find way to only sel 1-->
+        </label>
       </fieldset>
       <fieldset class="edu" id="edu">
         <legend>Please select your level of education: </legend>
         <label for="dropdown"> 
           <select id="dropdown" name="dropdown">
+            <option class="selection" hidden="true">Make a selection</option>
             <option>
               Less than high school
             </option>
