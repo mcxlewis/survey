@@ -47,3 +47,7 @@ fieldset:nth-of-type(6) {
     background-color:   #fdf1ff;
     border: 1px black dashed;
 }
+
+.first > :not(:last-child), .rec > :not(:last-child), .os-s > :not(:last-child)  {
+    margin-right: 15px;
+}

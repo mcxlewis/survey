@@ -14,9 +14,10 @@
     <header><h1 id="title">freeCodeCamp Survey Form</h1></header>
     <p id="description">Take a moment to fill out our survey.</p>
     <form id="survey-form">
-      <fieldset class="info" id="info">
+        <fieldset class="info" id="info">
         <legend>Tell us a little about yourself: </legend>
-        <label id="name-label">Name: 
+        <div class="first">
+          <label id="name-label">Name: 
           <input id="name" name="name" input type="text" placeholder="Your Name" required />
         </label>
         <label id="email-label">Email: 
@@ -28,6 +29,7 @@
         <label for="job">Current occupation: 
           <input id="job" name="job" input type="text" required />
         </label>
+        </div>
       </fieldset>
       <fieldset class="rec" id="rec">
         <legend>Would you recommend FCC to a friend?</legend> 
