@@ -1,40 +1,85 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
 </head>
 <body>
-  <title>Survey Form</title>
   <link href="styles.css" rel="stylesheet"/>
-    <h1>freeCodeCamp Survey Form</h1>
-    <p>Take a moment to fill out our survey.</p>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Take a moment to fill out our survey.</p>
+    <form id="survey-form">
       <fieldset>
-        <label for="name">Name: <input id="name" name="name" input type="text" required /></label>
-        <label for="email">Email: <input id="email" name="email" input type="email" required /> </label>
-        <label for="age">Age: <input id="" name="" input type="text" min="18 max="120" required /> </label>
-        <label for="job">Current occupation: <input id="job" name="job" input type="text" required /></label>
+        </label>
+        <label id="name-label">Name: 
+          <input id="name" name="name" input type="text" placeholder="Last, First" required />
+        </label>
+        <label id="email-label">Email: 
+          <input id="email" name="email" input type="email" placeholder= "youremail@here.com" required />
+        </label>
+        <label id="number-label">Age: 
+          <input id="number" name="age" input type="number" min="18" max="120" minlength="1" placeholder="-" required /> 
+        </label>
+        <label for="job">Current occupation: 
+          <input id="job" name="job" input type="text" required />
+        </label>
       </fieldset>
       <fieldset>
         <legend>Would you recommend FCC to a friend?</legend> 
-        <label>
-          <input type="radio"/>Yes</label> 
-          <label>
-          <input type="radio"/>No</label> 
-          <label>
-          <input type="radio"/>Prefer not to answer</label>
+        <label for="yes">
+          <input type="checkbox" value="Yes" /> Yes
+        </label> 
+        <label for="no">
+          <input type="checkbox" value ="No" /> No
+        </label> 
+        <label for="maybe">
+          <input type="checkbox" value="Maybe" /> Maybe <!--find way to only sel 1-->
+        </label>
       </fieldset>
       <fieldset>
-        <!--- insert dropdown here---> 
+        <label for="dropdown">Please select your level of education:
+          <select id="dropdown" name="dropdown">
+            <option>
+              Less than high school
+            </option>
+            <option>
+              High school or equivalent
+            </option>
+            <option>
+              College degree
+            </option>
+            <option>
+              None
+            </option>
+          </select> 
+        </label>    
       </fieldset> 
-      <fieldset>
-        <!--- insert buttons here---> 
+      <fieldset> 
+        <legend> Which operating system are you currently running?</legend>
+          <label for="macOS">
+            <input id="macOS" name="os" input type="radio" value="macOS"/> macOS
+          </label>
+          <label for="Windows">
+            <input id="Windows" name="os" input type="radio" value="Windows"/> Windows
+          </label>
+          <label for="Linux">
+            <input id="Linux" name="os" input type="radio" value="Linux"/> Linux
+          </label>
+          <label for="Other">
+            <input id="Other" name="os" input type="radio" value="Other"/> Other
+          </label>
       </fieldset>
        <fieldset>
-        <!--- insert comment box here---> 
+        <legend> What is your deepest, darkest fear?</legend>
+          <label for="text"> 
+           <textarea></textarea>
+          </label>
       </fieldset>
        <fieldset>
-        <!--- insert submit button here---> 
+         <input id="submit" input type="submit"/>
       </fieldset>
+      </form>
+      <footer>m. lewis - 2024 -created for the fCC Responsive Web Development Curriculum</footer>
 </body>
 </html>
